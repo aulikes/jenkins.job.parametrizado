@@ -9,7 +9,7 @@ job('ejemplo-job-DSL_GitHub') {
   parameters {
     stringParam('nombre', defaultValue = 'Mike', description = 'Parámetro de cadena')
     choiceParam('planeta', ['Mercurio', 'Venus', 'Tierra (default)'])
-    booleanParam('agente', false)
+    booleanParam('agente', true)
   }
   triggers {
     cron('H/7 * * * *')
